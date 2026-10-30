@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Éphér 2.0 — l’éphéméride qui se partage</title>
+<meta name="description" content="Notez vos journées, avancez avec un kanban quotidien et partagez votre agenda avec votre équipe. Gratuit pour commencer, Premium à 2,99 € par mois.">
+<meta name="theme-color" content="#F3F2EC">
+<meta property="og:title" content="Éphér 2.0 — l’éphéméride qui se partage">
+<meta property="og:description" content="Notes du jour, kanban quotidien et agenda partagé. Gratuit pour commencer.">
+<meta property="og:type" content="website">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="disp" style="position: relative; overflow: hidden; min-height: 100vh; background: #F3F2EC; color: #0E2340; font-family: 'Instrument Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.55">
+
+  <svg aria-hidden="true" width="100%" height="100%" style="position: absolute; inset: 0; pointer-events: none; opacity: .07; mix-blend-mode: multiply">
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 .05  0 0 0 0 .1  0 0 0 0 .2  0 0 0 .9 0"/></filter>
+    <rect width="100%" height="100%" filter="url(#grain)"/>
+  </svg>
+
+  <div style="position: relative">
+
+  <!-- BARRE -->
+  <header class="wrap" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 24px; padding-top: 20px; padding-bottom: 20px; border-bottom: 2px solid #0E2340">
+    <a href="#haut" class="disp" style="display: inline-flex; align-items: baseline; gap: 2px; min-height: 44px; text-decoration: none; font-size: 30px; font-weight: 800; letter-spacing: -.04em">Éphér<sup style="font-size: 14px; font-weight: 600; letter-spacing: 0; color: #BF2F19; margin-left: 3px">2.0</sup></a>
+    <nav aria-label="Navigation" class="mono" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 14px">
+      <a class="nl" href="#fonctionnalites">Fonctions</a>
+      <a class="nl" href="#comparatif">Comparatif</a>
+      <a class="nl" href="#tarifs">Tarifs</a>
+      <a class="btn-ink" data-app="/" href="#tarifs" style="min-height: 44px; padding: 0 18px; font-size: 14px">Essayer</a>
+    </nav>
+  </header>
+
+  <!-- HÉROS -->
+  <section id="haut" class="wrap" style="display: flex; flex-wrap: wrap; align-items: center; gap: 48px 40px; padding-top: 56px; padding-bottom: 88px">
+    <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 30px">
+      <p class="mono fu1" style="margin: 0; font-size: 14px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase"><span id="today">Jour n° 303 · vendredi 30 octobre 2026</span></p>
+      <h1 class="disp" style="margin: 0; font-size: clamp(54px, 8.4vw, 124px); font-weight: 800; letter-spacing: -.045em; line-height: .94">
+        <span class="mask"><span class="up">Chaque jour</span></span>
+        <span class="mask"><span class="up up2">a <span style="position: relative; display: inline-block; color: #BF2F19">sa page.<svg aria-hidden="true" viewBox="0 0 300 20" preserveAspectRatio="none" style="position: absolute; left: 0; bottom: -.04em; width: 100%; height: .2em; overflow: visible"><path class="draw" pathLength="1" d="M3 13 C 60 3, 120 19, 180 9 S 270 7, 297 12" fill="none" stroke="#E5412A" stroke-width="7" stroke-linecap="round"/></svg></span></span></span>
+      </h1>
+      <p class="fu2" style="margin: 0; max-width: 540px; font-size: 20px; line-height: 1.5">Éphér 2.0 est l’éphéméride qui se partage : vos notes du jour, un kanban pour avancer, et un agenda que toute l’équipe peut suivre.</p>
+      <div class="fu3" style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 28px">
+        <a class="btn-ink" data-app="/" href="#tarifs">Commencer gratuitement
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a class="btn-line" href="#comparatif">Voir ce que comprend chaque offre</a>
+      </div>
+    </div>
+
+    <div aria-hidden="true" class="sheetwrap" style="flex: 1 1 380px; position: relative; max-width: 440px; height: 520px; margin: 0 auto">
+      <div style="position: absolute; left: 22px; top: 22px; width: 360px; height: 470px; background: #E4E1D6; border: 2px solid #0E2340; transform: rotate(3deg)"></div>
+      <div style="position: absolute; left: 14px; top: 12px; width: 360px; height: 470px; background: #EDEBE2; border: 2px solid #0E2340; transform: rotate(-1.2deg)"></div>
+      <div style="position: absolute; left: 8px; top: 0; width: 360px; height: 470px; display: flex; flex-direction: column; padding: 18px 24px 22px; background: #FFFEFB; border: 2px solid #0E2340; box-shadow: 8px 10px 0 rgba(14,35,64,.12)">
+        <div style="display: flex; justify-content: center; gap: 26px; margin-bottom: 14px">
+          <span style="width: 12px; height: 12px; border-radius: 50%; background: #F3F2EC; border: 2px solid #0E2340"></span>
+          <span style="width: 12px; height: 12px; border-radius: 50%; background: #F3F2EC; border: 2px solid #0E2340"></span>
+          <span style="width: 12px; height: 12px; border-radius: 50%; background: #F3F2EC; border: 2px solid #0E2340"></span>
+        </div>
+        <div class="mono" style="display: flex; justify-content: space-between; padding-bottom: 8px; border-bottom: 2px dashed #0E2340; font-size: 12px; font-weight: 500; letter-spacing: .14em">
+          <span>ÉPHÉMÉRIDE</span><span>2026</span>
+        </div>
+        <div class="disp" style="margin-top: 14px; font-size: 24px; font-weight: 700; letter-spacing: .22em">OCTOBRE</div>
+        <div style="height: 250px; overflow: hidden; margin-left: -6px">
+          <div class="reel disp" style="font-size: 250px; font-weight: 800; letter-spacing: -.07em; line-height: 1">
+            <div style="height: 1em">24</div>
+            <div style="height: 1em; color: #E5412A">25</div>
+            <div style="height: 1em">26</div>
+            <div style="height: 1em">27</div>
+            <div style="height: 1em">28</div>
+            <div style="height: 1em">29</div>
+            <div style="height: 1em">30</div>
+          </div>
+        </div>
+        <div style="height: 34px; overflow: hidden; margin-top: 4px">
+          <div class="reel disp" style="font-size: 34px; font-weight: 700; letter-spacing: -.02em; line-height: 1">
+            <div style="height: 1em">Samedi</div>
+            <div style="height: 1em; color: #E5412A">Dimanche</div>
+            <div style="height: 1em">Lundi</div>
+            <div style="height: 1em">Mardi</div>
+            <div style="height: 1em">Mercredi</div>
+            <div style="height: 1em">Jeudi</div>
+            <div style="height: 1em">Vendredi</div>
+          </div>
+        </div>
+        <div class="mono" style="margin-top: auto; display: flex; justify-content: space-between; padding-top: 10px; border-top: 2px solid #0E2340; font-size: 13px; font-weight: 500">
+          <span>3 entrées</span><span>4 cartes</span>
+        </div>
+      </div>
+
+      <svg viewBox="0 0 130 130" width="130" height="130" style="position: absolute; right: -6px; top: -26px">
+        <defs><path id="circ" d="M65 65 m-47 0 a47 47 0 1 1 94 0 a47 47 0 1 1 -94 0"/></defs>
+        <g class="badge" style="transform-origin: 65px 65px">
+          <circle cx="65" cy="65" r="62" fill="#E5412A"/>
+          <g class="ring"><text class="mono" font-size="11.5" font-weight="600" letter-spacing="2.2" fill="#F3F2EC"><textPath href="#circ">GRATUIT POUR COMMENCER • SANS ENGAGEMENT •</textPath></text></g>
+          <text x="65" y="76" text-anchor="middle" class="disp" font-size="32" font-weight="800" letter-spacing="-1" fill="#F3F2EC">0 €</text>
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- BANDEAU -->
+  <div aria-hidden="true" style="overflow: hidden; border-top: 2px solid #0E2340; border-bottom: 2px solid #0E2340; background: #0E2340; color: #F3F2EC">
+    <div class="track disp" style="font-size: 44px; font-weight: 700; letter-spacing: -.02em; line-height: 1">
+      <div style="display: flex; align-items: center; gap: 28px; padding: 16px 14px 20px 0; white-space: nowrap">
+        <span>Noter</span><svg width="26" height="26" viewBox="0 0 24 24"><path fill="#E5412A" d="M12 0l2.4 8.2L22 4.6l-3.6 7.6L24 12l-5.6 0 3.6 7.4-7.6-3.6L12 24l-2.4-8.2L2 19.4l3.6-7.6L0 12l5.6 0L2 4.6l7.6 3.6z"/></svg>
+        <span>Planifier</span><svg width="26" height="26" viewBox="0 0 24 24"><path fill="#E5412A" d="M12 0l2.4 8.2L22 4.6l-3.6 7.6L24 12l-5.6 0 3.6 7.4-7.6-3.6L12 24l-2.4-8.2L2 19.4l3.6-7.6L0 12l5.6 0L2 4.6l7.6 3.6z"/></svg>
+        <span>Avancer</span><svg width="26" height="26" viewBox="0 0 24 24"><path fill="#E5412A" d="M12 0l2.4 8.2L22 4.6l-3.6 7.6L24 12l-5.6 0 3.6 7.4-7.6-3.6L12 24l-2.4-8.2L2 19.4l3.6-7.6L0 12l5.6 0L2 4.6l7.6 3.6z"/></svg>
+        <span>Reporter à demain</span><svg width="26" height="26" viewBox="0 0 24 24"><path fill="#E5412A" d="M12 0l2.4 8.2L22 4.6l-3.6 7.6L24 12l-5.6 0 3.6 7.4-7.6-3.6L12 24l-2.4-8.2L2 19.4l3.6-7.6L0 12l5.6 0L2 4.6l7.6 3.6z"/></svg>
+        <span>Partager</span><svg width="26" height="26" viewBox="0 0 24 24"><path fill="#E5412A" d="M12 0l2.4 8.2L22 4.6l-3.6 7.6L24 12l-5.6 0 3.6 7.4-7.6-3.6L12 24l-2.4-8.2L2 19.4l3.6-7.6L0 12l5.6 0L2 4.6l7.6 3.6z"/></svg>
+        <span>Commenter</span><svg width="26" height="26" viewBox="0 0 24 24"><path fill="#E5412A" d="M12 0l2.4 8.2L22 4.6l-3.6 7.6L24 12l-5.6 0 3.6 7.4-7.6-3.6L12 24l-2.4-8.2L2 19.4l3.6-7.6L0 12l5.6 0L2 4.6l7.6 3.6z"/></svg>
+      </div>
+      <div style="display: flex; align-items: center; gap: 28px; padding: 16px 14px 20px 0; white-space: nowrap">
+        <span>Noter</span><svg width="26" height="26" viewBox="0 0 24 24"><path fill="#E5412A" d="M12 0l2.4 8.2L22 4.6l-3.6 7.6L24 12l-5.6 0 3.6 7.4-7.6-3.6L12 24l-2.4-8.2L2 19.4l3.6-7.6L0 12l5.6 0L2 4.6l7.6 3.6z"/></svg>
+        <span>Planifier</span><svg width="26" height="26" viewBox="0 0 24 24"><path fill="#E5412A" d="M12 0l2.4 8.2L22 4.6l-3.6 7.6L24 12l-5.6 0 3.6 7.4-7.6-3.6L12 24l-2.4-8.2L2 19.4l3.6-7.6L0 12l5.6 0L2 4.6l7.6 3.6z"/></svg>
+        <span>Avancer</span><svg width="26" height="26" viewBox="0 0 24 24"><path fill="#E5412A" d="M12 0l2.4 8.2L22 4.6l-3.6 7.6L24 12l-5.6 0 3.6 7.4-7.6-3.6L12 24l-2.4-8.2L2 19.4l3.6-7.6L0 12l5.6 0L2 4.6l7.6 3.6z"/></svg>
+        <span>Reporter à demain</span><svg width="26" height="26" viewBox="0 0 24 24"><path fill="#E5412A" d="M12 0l2.4 8.2L22 4.6l-3.6 7.6L24 12l-5.6 0 3.6 7.4-7.6-3.6L12 24l-2.4-8.2L2 19.4l3.6-7.6L0 12l5.6 0L2 4.6l7.6 3.6z"/></svg>
+        <span>Partager</span><svg width="26" height="26" viewBox="0 0 24 24"><path fill="#E5412A" d="M12 0l2.4 8.2L22 4.6l-3.6 7.6L24 12l-5.6 0 3.6 7.4-7.6-3.6L12 24l-2.4-8.2L2 19.4l3.6-7.6L0 12l5.6 0L2 4.6l7.6 3.6z"/></svg>
+        <span>Commenter</span><svg width="26" height="26" viewBox="0 0 24 24"><path fill="#E5412A" d="M12 0l2.4 8.2L22 4.6l-3.6 7.6L24 12l-5.6 0 3.6 7.4-7.6-3.6L12 24l-2.4-8.2L2 19.4l3.6-7.6L0 12l5.6 0L2 4.6l7.6 3.6z"/></svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- FONCTIONS -->
+  <section id="fonctionnalites" class="wrap" style="padding-top: 96px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 96px">
+
+    <!-- 01 Noter -->
+    <article style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px 64px">
+      <div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 18px">
+        <p class="mono" style="margin: 0; display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase"><span class="disp" style="font-size: 54px; font-weight: 800; letter-spacing: -.04em; line-height: 1; color: #E5412A">01</span>Noter · Free</p>
+        <h2 class="disp" style="margin: 0; font-size: clamp(36px, 4.6vw, 60px); font-weight: 800; letter-spacing: -.035em; line-height: 1">Notez la journée. Retrouvez-la dans deux ans.</h2>
+        <p style="margin: 0; max-width: 460px">Rendez-vous, faits marquants, rappels : une entrée par ligne, classée par date. Vue jour, vue mois, recherche, et 24 mois d’historique sous la main.</p>
+      </div>
+      <div aria-hidden="true" style="flex: 1 1 440px; min-width: 0; padding: 14px 28px; border: 2px solid #0E2340; background-color: #FFFEFB; background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 51px, rgba(14,35,64,.22) 51px, rgba(14,35,64,.22) 53px); box-shadow: 8px 8px 0 #0E2340">
+        <div class="mono" style="font-size: 18px; font-weight: 500; line-height: 53px; overflow: hidden">
+          <div style="display: flex; align-items: center"><span class="ty ty1">09:30  Réunion d’équipe</span></div>
+          <div style="display: flex; align-items: center"><span class="ty ty2">11:00  Appel prestataire</span></div>
+          <div style="display: flex; align-items: center"><span class="ty ty3">16:00  Clôture de semaine</span></div>
+          <div style="color: #4B5668; font-size: 14px; letter-spacing: .06em">29 OCT · 28 OCT · 27 OCT …</div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 02 Avancer -->
+    <article style="display: flex; flex-wrap: wrap-reverse; align-items: center; gap: 40px 64px">
+      <div aria-hidden="true" style="flex: 1 1 440px; min-width: 0; padding: 18px; border: 2px solid #0E2340; background: #FFFEFB; box-shadow: -8px 8px 0 #E5412A">
+        <div style="position: relative; height: 250px">
+          <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; height: 100%">
+            <div style="border-top: 3px solid #5C7494; padding-top: 6px"><span class="mono" style="font-size: 11px; font-weight: 600; letter-spacing: .06em">À FAIRE</span><div style="margin-top: 12px; height: 46px; border: 1.5px dashed rgba(14,35,64,.35)"></div><div style="margin-top: 62px; height: 46px; border: 1.5px dashed rgba(14,35,64,.35)"></div></div>
+            <div style="border-top: 3px solid #E5412A; padding-top: 6px"><span class="mono" style="font-size: 11px; font-weight: 600; letter-spacing: .06em; color: #BF2F19">URGENT</span></div>
+            <div style="border-top: 3px solid #C98418; padding-top: 6px"><span class="mono" style="font-size: 11px; font-weight: 600; letter-spacing: .06em">EN COURS</span><div style="margin-top: 12px; height: 46px; border: 1.5px dashed rgba(14,35,64,.35)"></div></div>
+            <div style="border-top: 3px solid #1F6F5C; padding-top: 6px"><span class="mono" style="font-size: 11px; font-weight: 600; letter-spacing: .06em; color: #1F6F5C">TRAITÉ</span></div>
+          </div>
+          <div class="traveler" style="padding: 8px; background: #0E2340; color: #F3F2EC; font-size: 12px; font-weight: 600; line-height: 1.25; box-shadow: 4px 4px 0 rgba(14,35,64,.25)">Valider la commande</div>
+          <div class="stamp mono" style="position: absolute; right: 2%; top: 118px; padding: 4px 12px; border: 3px solid #1F6F5C; color: #1F6F5C; font-size: 20px; font-weight: 600; letter-spacing: .12em; background: rgba(255,254,251,.85)">TRAITÉ</div>
+        </div>
+      </div>
+      <div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 18px">
+        <p class="mono" style="margin: 0; display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase"><span class="disp" style="font-size: 54px; font-weight: 800; letter-spacing: -.04em; line-height: 1; color: #E5412A">02</span>Avancer · Premium</p>
+        <h2 class="disp" style="margin: 0; font-size: clamp(36px, 4.6vw, 60px); font-weight: 800; letter-spacing: -.035em; line-height: 1">Un kanban par jour. Ce qui n’est pas fini passe à demain.</h2>
+        <p style="margin: 0; max-width: 460px">À faire, Urgent, En cours, Traité. Glissez les cartes d’une colonne à l’autre ; « Reporter à demain » déplace la carte et garde la trace du jour d’origine.</p>
+      </div>
+    </article>
+
+    <!-- 03 Partager -->
+    <article style="display: flex; flex-wrap: wrap; align-items: center; gap: 40px 64px">
+      <div style="flex: 1 1 360px; display: flex; flex-direction: column; gap: 18px">
+        <p class="mono" style="margin: 0; display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase"><span class="disp" style="font-size: 54px; font-weight: 800; letter-spacing: -.04em; line-height: 1; color: #E5412A">03</span>Partager · Premium</p>
+        <h2 class="disp" style="margin: 0; font-size: clamp(36px, 4.6vw, 60px); font-weight: 800; letter-spacing: -.035em; line-height: 1">Tout le monde sur la même page.</h2>
+        <p style="margin: 0; max-width: 460px">Invitez, choisissez les droits (Administrateur, Contributeur ou Commentateur) et chacun voit les changements arriver. Les commentaires restent attachés à la carte ou à l’entrée.</p>
+      </div>
+      <div aria-hidden="true" style="flex: 1 1 440px; min-width: 0; position: relative; height: 290px; overflow: hidden; border: 2px solid #0E2340; background-color: #FFFEFB; box-shadow: 8px 8px 0 #0E2340">
+        <div style="position: absolute; left: 28px; top: 28px; right: 28px; display: flex; flex-direction: column; gap: 20px">
+          <div style="height: 12px; width: 62%; background: rgba(14,35,64,.16)"></div>
+          <div style="height: 12px; width: 84%; background: rgba(14,35,64,.16)"></div>
+          <div style="height: 12px; width: 48%; background: rgba(14,35,64,.16)"></div>
+          <div style="height: 12px; width: 72%; background: rgba(14,35,64,.16)"></div>
+          <div style="height: 12px; width: 56%; background: rgba(14,35,64,.16)"></div>
+        </div>
+        <div class="cur curA">
+          <svg width="22" height="22" viewBox="0 0 24 24"><path d="M3 2l17 8-7.5 2.2L9.5 20z" fill="#0E2340" stroke="#FFFEFB" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <span class="mono" style="position: absolute; left: 18px; top: 18px; padding: 2px 8px; background: #0E2340; color: #F3F2EC; font-size: 12px; font-weight: 600; white-space: nowrap">Claire · Admin</span>
+        </div>
+        <div class="cur curB">
+          <svg width="22" height="22" viewBox="0 0 24 24"><path d="M3 2l17 8-7.5 2.2L9.5 20z" fill="#BF2F19" stroke="#FFFEFB" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <span class="mono" style="position: absolute; left: 18px; top: 18px; padding: 2px 8px; background: #BF2F19; color: #fff; font-size: 12px; font-weight: 600; white-space: nowrap">Julien · Contributeur</span>
+        </div>
+        <div class="cur curC">
+          <svg width="22" height="22" viewBox="0 0 24 24"><path d="M3 2l17 8-7.5 2.2L9.5 20z" fill="#1F6F5C" stroke="#FFFEFB" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          <span class="mono" style="position: absolute; left: 18px; top: 18px; padding: 2px 8px; background: #1F6F5C; color: #fff; font-size: 12px; font-weight: 600; white-space: nowrap">Sophie · Commentateur</span>
+          <span class="bubble" style="position: absolute; left: 22px; top: -34px; padding: 4px 10px; background: #fff; border: 2px solid #1F6F5C; color: #1F6F5C; font-size: 13px; font-weight: 600; white-space: nowrap">Bien reçu.</span>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- COMPARATIF -->
+  <section id="comparatif" class="wrap" style="padding-top: 88px; padding-bottom: 80px; display: flex; flex-direction: column; gap: 32px">
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+      <p class="mono" style="margin: 0; font-size: 13px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: #BF2F19">Comparatif</p>
+      <h2 class="disp" style="margin: 0; font-size: clamp(38px, 5vw, 68px); font-weight: 800; letter-spacing: -.04em; line-height: .98">Ce que chaque offre permet.</h2>
+    </div>
+    <div style="overflow-x: auto">
+      <table style="width: 100%; min-width: 720px; border-collapse: collapse; border-top: 3px solid #0E2340; border-bottom: 3px solid #0E2340">
+        <caption style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Comparatif des offres Free, Premium et Entreprise</caption>
+        <thead>
+          <tr>
+            <th scope="col" class="mono" style="padding: 22px 12px 22px 0; text-align: left; font-size: 12px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: #4B5668">Fonctionnalité</th>
+            <th scope="col" style="padding: 22px 12px; text-align: center; width: 17%"><span class="disp" style="display: block; font-size: 30px; font-weight: 800; letter-spacing: -.03em">Free</span><span class="mono" style="font-size: 14px">0 €</span></th>
+            <th scope="col" style="padding: 22px 12px; text-align: center; width: 19%; background: #0E2340; color: #F3F2EC"><span class="disp" style="display: block; font-size: 30px; font-weight: 800; letter-spacing: -.03em">Premium</span><span class="mono" style="font-size: 14px">2,99 € / mois</span></th>
+            <th scope="col" style="padding: 22px 12px; text-align: center; width: 19%"><span class="disp" style="display: block; font-size: 30px; font-weight: 800; letter-spacing: -.03em">Entreprise</span><span class="mono" style="font-size: 14px">dès 9,99 € / mois</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-top: 1.5px solid rgba(14,35,64,.28)"><th scope="row" style="padding: 16px 12px 16px 0; text-align: left; font-weight: 500">Calendrier personnel (vues jour et mois)</th><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #0E2340"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td><td style="padding: 16px 12px; text-align: center; background: #0E2340; color: #F3F2EC"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #E5412A"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #0E2340"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td></tr>
+<tr style="border-top: 1.5px solid rgba(14,35,64,.28)"><th scope="row" style="padding: 16px 12px 16px 0; text-align: left; font-weight: 500">Entrées d’éphéméride et recherche</th><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #0E2340"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td><td style="padding: 16px 12px; text-align: center; background: #0E2340; color: #F3F2EC"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #E5412A"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #0E2340"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td></tr>
+<tr style="border-top: 1.5px solid rgba(14,35,64,.28)"><th scope="row" style="padding: 16px 12px 16px 0; text-align: left; font-weight: 500">24 mois d’historique</th><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #0E2340"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td><td style="padding: 16px 12px; text-align: center; background: #0E2340; color: #F3F2EC"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #E5412A"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #0E2340"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td></tr>
+<tr style="border-top: 1.5px solid rgba(14,35,64,.28)"><th scope="row" style="padding: 16px 12px 16px 0; text-align: left; font-weight: 500">Application installable sur PC et smartphone</th><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #0E2340"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td><td style="padding: 16px 12px; text-align: center; background: #0E2340; color: #F3F2EC"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #E5412A"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #0E2340"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td></tr>
+<tr style="border-top: 1.5px solid rgba(14,35,64,.28)"><th scope="row" style="padding: 16px 12px 16px 0; text-align: left; font-weight: 500">Kanban journalier (À faire, Urgent, En cours, Traité)</th><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span aria-hidden="true" style="opacity: .55">—</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Non inclus</span></td><td style="padding: 16px 12px; text-align: center; background: #0E2340; color: #F3F2EC"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #E5412A"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #0E2340"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td></tr>
+<tr style="border-top: 1.5px solid rgba(14,35,64,.28)"><th scope="row" style="padding: 16px 12px 16px 0; text-align: left; font-weight: 500">Partage de l’agenda</th><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span aria-hidden="true" style="opacity: .55">—</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Non inclus</span></td><td style="padding: 16px 12px; text-align: center; background: #0E2340; color: #F3F2EC"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #E5412A"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #0E2340"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td></tr>
+<tr style="border-top: 1.5px solid rgba(14,35,64,.28)"><th scope="row" style="padding: 16px 12px 16px 0; text-align: left; font-weight: 500">Rôles : Administrateur, Contributeur, Commentateur</th><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span aria-hidden="true" style="opacity: .55">—</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Non inclus</span></td><td style="padding: 16px 12px; text-align: center; background: #0E2340; color: #F3F2EC"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #E5412A"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #0E2340"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td></tr>
+<tr style="border-top: 1.5px solid rgba(14,35,64,.28)"><th scope="row" style="padding: 16px 12px 16px 0; text-align: left; font-weight: 500">Commentaires sur les entrées et les cartes</th><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span aria-hidden="true" style="opacity: .55">—</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Non inclus</span></td><td style="padding: 16px 12px; text-align: center; background: #0E2340; color: #F3F2EC"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #E5412A"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span style="display: inline-block; width: 14px; height: 14px; border-radius: 50%; background: #0E2340"></span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Inclus</span></td></tr>
+<tr style="border-top: 1.5px solid rgba(14,35,64,.28)"><th scope="row" style="padding: 16px 12px 16px 0; text-align: left; font-weight: 500">Nombre d’utilisateurs</th><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span class="mono" style="font-size: 14px; font-weight: 600">1</span></td><td style="padding: 16px 12px; text-align: center; background: #0E2340; color: #F3F2EC"><span class="mono" style="font-size: 14px; font-weight: 600">3 (vous compris)</span></td><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span class="mono" style="font-size: 14px; font-weight: 600">Selon l’équipe</span></td></tr>
+<tr style="border-top: 1.5px solid rgba(14,35,64,.28)"><th scope="row" style="padding: 16px 12px 16px 0; text-align: left; font-weight: 500">Plusieurs équipes</th><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span aria-hidden="true" style="opacity: .55">—</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Non inclus</span></td><td style="padding: 16px 12px; text-align: center; background: #0E2340; color: #F3F2EC"><span aria-hidden="true" style="opacity: .55">—</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Non inclus</span></td><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span class="mono" style="font-size: 12px; font-weight: 600; letter-spacing: .08em; color: #BF2F19; border: 1.5px solid #BF2F19; padding: 2px 8px">BIENTÔT</span></td></tr>
+<tr style="border-top: 1.5px solid rgba(14,35,64,.28)"><th scope="row" style="padding: 16px 12px 16px 0; text-align: left; font-weight: 500">Journal d’audit</th><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span aria-hidden="true" style="opacity: .55">—</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Non inclus</span></td><td style="padding: 16px 12px; text-align: center; background: #0E2340; color: #F3F2EC"><span aria-hidden="true" style="opacity: .55">—</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Non inclus</span></td><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span class="mono" style="font-size: 12px; font-weight: 600; letter-spacing: .08em; color: #BF2F19; border: 1.5px solid #BF2F19; padding: 2px 8px">BIENTÔT</span></td></tr>
+<tr style="border-top: 1.5px solid rgba(14,35,64,.28)"><th scope="row" style="padding: 16px 12px 16px 0; text-align: left; font-weight: 500">Export PDF et Excel</th><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span aria-hidden="true" style="opacity: .55">—</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Non inclus</span></td><td style="padding: 16px 12px; text-align: center; background: #0E2340; color: #F3F2EC"><span aria-hidden="true" style="opacity: .55">—</span><span style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Non inclus</span></td><td style="padding: 16px 12px; text-align: center; background: transparent; color: #0E2340"><span class="mono" style="font-size: 12px; font-weight: 600; letter-spacing: .08em; color: #BF2F19; border: 1.5px solid #BF2F19; padding: 2px 8px">BIENTÔT</span></td></tr>
+</tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- TARIFS -->
+  <section id="tarifs" class="wrap" style="padding-top: 24px; padding-bottom: 96px; display: flex; flex-direction: column; gap: 44px">
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 720px">
+      <p class="mono" style="margin: 0; font-size: 13px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: #BF2F19">Tarifs</p>
+      <h2 class="disp" style="margin: 0; font-size: clamp(38px, 5vw, 68px); font-weight: 800; letter-spacing: -.04em; line-height: .98">Trois tickets, sans engagement.</h2>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr)); gap: 34px 28px; align-items: stretch; padding-top: 12px">
+
+      <article class="ticket">
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <h3 class="disp" style="margin: 0; font-size: 34px; font-weight: 800; letter-spacing: -.03em">Free</h3>
+          <p style="margin: 0; display: flex; align-items: baseline; gap: 10px"><b class="disp" style="font-size: 76px; font-weight: 800; letter-spacing: -.05em; line-height: 1">0 €</b><span class="mono" style="font-size: 13px">pour toujours</span></p>
+          <p style="margin: 0">Pour tenir son calendrier au quotidien.</p>
+        </div>
+        <div class="perf" aria-hidden="true"></div>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+          <li style="display: flex; gap: 12px"><span aria-hidden="true" style="flex: none; margin-top: 9px; width: 10px; height: 10px; background: #E5412A"></span>Calendrier personnel, vues jour et mois</li>
+          <li style="display: flex; gap: 12px"><span aria-hidden="true" style="flex: none; margin-top: 9px; width: 10px; height: 10px; background: #E5412A"></span>Entrées, recherche et 24 mois d’historique</li>
+          <li style="display: flex; gap: 12px"><span aria-hidden="true" style="flex: none; margin-top: 9px; width: 10px; height: 10px; background: #E5412A"></span>Installable sur PC et smartphone</li>
+        </ul>
+        <a class="btn-ink" data-app="/" href="#haut" style="margin-top: auto">Commencer gratuitement</a>
+      </article>
+
+      <article class="ticket hot">
+        <span class="sticker mono" style="position: absolute; top: -18px; right: 20px; padding: 6px 12px; background: #E5412A; color: #fff; font-size: 12px; font-weight: 600; letter-spacing: .12em">RECOMMANDÉ</span>
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <h3 class="disp" style="margin: 0; font-size: 34px; font-weight: 800; letter-spacing: -.03em">Premium</h3>
+          <p style="margin: 0; display: flex; align-items: baseline; gap: 10px"><b class="disp" style="font-size: 76px; font-weight: 800; letter-spacing: -.05em; line-height: 1">2,99 €</b><span class="mono" style="font-size: 13px">par mois</span></p>
+          <p style="margin: 0">Pour partager et avancer à plusieurs.</p>
+        </div>
+        <div class="perf" aria-hidden="true"></div>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+          <li style="display: flex; gap: 12px"><span aria-hidden="true" style="flex: none; margin-top: 9px; width: 10px; height: 10px; background: #E5412A"></span><span><b>Tout Free</b>, plus :</span></li>
+          <li style="display: flex; gap: 12px"><span aria-hidden="true" style="flex: none; margin-top: 9px; width: 10px; height: 10px; background: #E5412A"></span>Kanban journalier à 4 colonnes</li>
+          <li style="display: flex; gap: 12px"><span aria-hidden="true" style="flex: none; margin-top: 9px; width: 10px; height: 10px; background: #E5412A"></span>Jusqu’à 3 utilisateurs (vous compris)</li>
+          <li style="display: flex; gap: 12px"><span aria-hidden="true" style="flex: none; margin-top: 9px; width: 10px; height: 10px; background: #E5412A"></span>Partage de l’agenda et rôles</li>
+          <li style="display: flex; gap: 12px"><span aria-hidden="true" style="flex: none; margin-top: 9px; width: 10px; height: 10px; background: #E5412A"></span>Commentaires sur entrées et cartes</li>
+        </ul>
+        <a class="btn-ink" data-app="/?offre=premium" href="#haut" style="margin-top: auto; background: #F3F2EC; color: #0E2340; border-color: #F3F2EC">Choisir Premium</a>
+      </article>
+
+      <article class="ticket">
+        <div style="display: flex; flex-direction: column; gap: 10px">
+          <h3 class="disp" style="margin: 0; font-size: 34px; font-weight: 800; letter-spacing: -.03em">Entreprise</h3>
+          <p style="margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px"><span class="mono" style="font-size: 13px">dès</span><b class="disp" style="font-size: 76px; font-weight: 800; letter-spacing: -.05em; line-height: 1">9,99 €</b><span class="mono" style="font-size: 13px">par mois, selon le nombre d’utilisateurs</span></p>
+          <p style="margin: 0">Pour les équipes, selon leur taille.</p>
+        </div>
+        <div class="perf" aria-hidden="true"></div>
+        <ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px">
+          <li style="display: flex; gap: 12px"><span aria-hidden="true" style="flex: none; margin-top: 9px; width: 10px; height: 10px; background: #E5412A"></span><span><b>Tout Premium</b>, plus :</span></li>
+          <li style="display: flex; gap: 12px"><span aria-hidden="true" style="flex: none; margin-top: 9px; width: 10px; height: 10px; background: #E5412A"></span>Autant d’utilisateurs que votre équipe</li>
+          <li style="display: flex; gap: 12px"><span aria-hidden="true" style="flex: none; margin-top: 9px; width: 10px; height: 10px; border: 2px solid #E5412A"></span><span>Plusieurs équipes <span class="mono" style="font-size: 12px; font-weight: 600; color: #BF2F19">· BIENTÔT</span></span></li>
+          <li style="display: flex; gap: 12px"><span aria-hidden="true" style="flex: none; margin-top: 9px; width: 10px; height: 10px; border: 2px solid #E5412A"></span><span>Journal d’audit et exports <span class="mono" style="font-size: 12px; font-weight: 600; color: #BF2F19">· BIENTÔT</span></span></li>
+        </ul>
+        <a class="btn-ink" data-contact href="#haut" style="margin-top: auto">Nous contacter</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- PIED -->
+  <footer style="border-top: 3px solid #0E2340; background: #F3F2EC; overflow: hidden">
+    <div class="wrap mono" style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-top: 24px; padding-bottom: 8px; font-size: 13px; font-weight: 500; letter-spacing: .06em">
+      <span>ÉPHÉR 2.0 · L’ÉPHÉMÉRIDE PARTAGÉ</span><span>[MENTIONS LÉGALES] · [CONTACT]</span>
+    </div>
+    <p aria-hidden="true" class="disp" style="margin: 0; padding: 0 clamp(8px, 2vw, 28px); font-size: clamp(88px, 21vw, 330px); font-weight: 800; letter-spacing: -.06em; line-height: .82; white-space: nowrap; transform: translateY(.08em)">Éphér<span style="color: #E5412A">2.0</span></p>
+  </footer>
+  </div>
+</div>
+<script src="assets/site.js" defer></script>
+</body>
+</html>
