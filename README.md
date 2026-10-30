@@ -1,4 +1,4 @@
-# Éphér 2.0 — site vitrine
+# Epher 2.0 — site vitrine
 
 Page de présentation statique (HTML, CSS, JS sans dépendance, polices embarquées) : motion design, comparatif Free / Premium / Entreprise et tarifs. L'application elle-même est dans le dépôt `epher-2`.
 
